@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>DOM MANUPULATION</title>
+   <link rel="stylesheet" href="style5.css">
+</head>
+     <div class="container">
+        <div class="text">
+           <h3>JAI SHREE RAM </h3>
+           </div>
+        <div class="images">
+           <img id="image" src="shree_ram.jpg"/>
+        </div>
+        <div class="btns">
+        <button class="btn">HANUMAAN</button>
+        </div>
+     </div>
+<body>
+<script>
+   let img = document.querySelector("#image");
+   let btn = document.querySelector(".btn");
+   let text = document.querySelector(".text");
+   
+   btn.addEventListener('click', (e)=>{
+       
+       if(btn.textContent.includes('HANUMAAN')){
+          
+          img.src = "/hanumaan.jpg";
+          text.innerHTML = "JAI HANUMAAN";
+          btn.innerHTML = "SHREE RAM"
+       }
+       else{
+          img.src = "/shree_ram.jpg";
+          text.innerHTML = "JAI SHREE RAM";
+          btn.innerHTML = "HANUMAAN";
+       }
+      
+       
+       
+   });
+   
+   
+</script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>RANDOM HEX COLOR GENERATOR</title>
+   <link rel="stylesheet" href="style8.css">
+</head>
+
+<body>
+   <div class="container">
+     <div class="box">
+        <h1>#ffffff</h1>
+        <button id="refresh"class="rf btn">REFRESH</button>
+     </div>
+   </div>
+<script>
+   let refreshbtn = document.getElementById("refresh");
+   //let copybtn = document.getElementById("copy");
+   let h1 = document.querySelector("h1")
+   let code = "";  
+      const getcolor = ()=>{
+      let randomnum = Math.floor(Math.random()*16777215).toString(16);
+      let hexcode = "#"+randomnum;
+      let con = document.querySelector("body");
+      con.style.backgroundColor = hexcode;
+      h1.innerHTML = hexcode;
+      code = hexcode;
+   }
+      /*const copycolor = ()=>{
+         navigator.clipboard.writeText("hi")
+      }*/
+   refreshbtn.addEventListener("click",getcolor);
+   //copybtn.addEventListener("click",copycolor)
+</script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+.container{
+   overflow: hidden;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.top{
+   width: 100%;
+   height: 250px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2rem;
+}
+.top > .add{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+.add  input{
+   outline: none;
+   background: transparent;
+   padding: 8px 30px;
+   border: none;
+   border-radius: 6px;
+}
+.add button{
+   padding: 8px 15px;
+   border: none;
+   border-radius: 7px;
+   font-size: .99rem; 
+   background-color: #FD585A;
+}
+.add .inpbtn{
+   border-radius: 8px;
+   width: 100%;
+   background-color: #F8F8F8;
+}
+.add textarea{
+   color: black;
+   outline: none;
+   width: 85%;
+   padding: 10px 10px;
+   border: none;
+   border-radius: 5px;
+   margin-top: 1.05rem;
+   box-shadow: 10px 6px 5px #BFBBBE;
+
+   }
+.note_area{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 500px;
+}
+.note_area .note{
+   overflow: hidden;
+   box-shadow: 10px 6px 5px #BFBBBE;
+   border: 2px black;
+   width: 90%;
+   height: 120px;
+   padding: 10px 15px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.note_area .note .title{
+   position: relative;
+}
+.note_area .note .btns{
+   width: 208px;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.note_area .note .btns .btn{
+   background-color: var(--bcg--);
+   margin: 5px 5px;
+   border:none; 
+   padding: 10px 15px;
+  
+}
+.note_area .note .btns .deletebtn{
+   padding: 10px 37px;
+}
+.note_area .note .names .description {
+   
+   position: absolute;
+   width: 180px;
+   color: #969BA3;
+}
+
+
+.floatingarea{
+   z-index: 99;
+   transition: all .4s linear ;
+   letter-spacing: 2px;
+   display: none;
+   box-shadow: 10px 6px 5px #BFBBBE;
+   border: 1.4px solid black;
+   border-radius: 15px;
+   padding: 18px 20px;
+   backdrop-filter: blur(5px);
+   backdrop-filter: lighten;
+   display: grid;
+   height: 650px;
+   width: 90%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-200%,-200%);
+   
+}
+.floatingarea h6{
+   color: #65686A;
+   align-self: center;
+}
+.floatingarea div h1{
+   display: block;
+   margin-top: 15px;
+   color: #1B2228;
+}
+.floatingarea div h3{
+   width: 300px;
+   height: auto;
+   display: block;
+   margin-top: 20px;
+   color:#353D43;
+}
+.fa-top{
+   display: flex;
+   justify-content: space-between;
+}
+.fa-top div button{
+   position: absolute;
+   right: 10%;
+   top: 5%;
+   transform: translate(10%,-10%);
+   padding: 8px 15px;
+   background-color: #0BB71A;
+   border: none;
+   border-radius: 6px;
+   font-size: 17px;
+}
+.time{
+   margin-top: 2rem;
+}

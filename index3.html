@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title></title>
+   <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+  <div class="content">
+     <div class="addons">
+     <div class="count">999</div>
+     </div>
+     <div class="btns">
+        <button class="btn decrease">DECREASE</button>
+        <button class="btn plus10">10+</button>
+        <button class="btn increase">INCREASE</button>
+     </div>
+     <button class="btn reset">RESET</button>
+  </div>
+  <script>
+  //console.log("JAI SHREE RAM")
+     let increase = document.querySelector(".increase")
+     let decrease = document.querySelector(".decrease")
+     let reset = document.querySelector(".reset")
+     let count = document.querySelector(".count")
+     let plus10 = document.querySelector(".plus10");
+     let click = 9999;
+     
+     
+     
+     plus10.addEventListener("click",()=>{
+        click += 10;
+        count.innerHTML = click;
+     })
+    // console.log(increase,decrease,reset,count)
+     increase.addEventListener("click",()=>{
+        click += 1;
+      //  console.log("working")
+       if(click < 10 && click>0){
+          
+          count.innerHTML = "0" + click;
+       }
+       else{
+          count.innerHTML = click;
+       }
+     });
+     decrease.addEventListener("click",()=>{
+        click = click-1;
+         if(click < 10 && click > 0){
+          
+          count.innerHTML = "0" + click;
+       }
+       
+      else if(click==0){
+          count.innerHTML = "00";
+       }
+       else {
+         count.innerHTML = click;
+       }
+        
+     });
+     reset.addEventListener("click",()=>{
+        click = 0;
+        count.innerHTML = "00";
+     });
+   
+  </script>
+</body>
+
+</html>

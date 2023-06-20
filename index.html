@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title></title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="timer">
+     <div class="hours" id="hours"><h1>00</h1></div>
+     <h2>:</h2>
+     <div class="minutes" id="minutes"><h1>00</h1></div>
+     <h2>:</h2>
+     <div class="seconds" id="seconds"><h3>00</h3></div>
+     <div><h6 id="ampm">PM</h6></div>
+   </div>
+   </div>
+<script>
+console.log("JAI SHREE RAM 🙏  ");
+
+var hours = document.getElementById("hours");
+var minutes = document.getElementById("minutes");
+var ampm = document.getElementById("ampm");
+function timer(){
+   var h = new Date().getHours();
+   var m = new Date().getMinutes();
+   var s = new Date().getSeconds();
+   if (h>12) {
+      h -= 12;
+      ampm.innerHTML = "PM";
+   }
+   else{
+      ampm.innerHTML = "AM"
+   }
+   if (s<10) {
+      s = "0"+s;
+   }
+   if (m<10) {
+     m = "0"+m; 
+   }
+   
+   hours.innerHTML = h;
+   minutes.innerHTML = m;
+   seconds.innerHTML =s;
+}
+  
+  
+setInterval(timer,100)
+</script>
+</body>
+
+</html>

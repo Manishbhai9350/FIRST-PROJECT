@@ -1,0 +1,45 @@
+  <!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>CRUD APP USING JS</title>
+   <link rel="stylesheet" href="style7.css">
+   
+</head>
+
+<body>
+     <div class="container">
+        <div class="top">
+        <div class="typejs">
+           <h1 id="element">TO-DO LIST</h1>
+        </div>
+        <div class="input_area"> 
+          <div class="search">
+           <input id="input" type="text" placeholder="Add chapter">
+           <button id="add_btn">ADD</button>
+           </div>
+        </div>  
+        </div>
+       <div class="list_area" id="list_area">
+          <div class="numlist">
+        <label for="list_area"><p class="list_number">0</p></label>
+             </div>
+           <ul class="list">
+             
+           </ul>
+        </div>
+      
+     </div>
+        <script src="script7.js"></script>
+       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>CREATE</i> RENAME UPDATE DELETE', '💓 WORKING TO-DO LIST 💓','TO-DO LIST'],
+      typeSpeed: 70,
+    });
+  </script>
+</body>
+
+</html>

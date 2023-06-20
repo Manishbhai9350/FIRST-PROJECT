@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>CHANGE IMAGES RANDOMLY</title>
+</head>
+<link rel="stylesheet" href="style6.css">
+<body>
+   <script>
+   let points = 0;
+      
+      gamefunc();
+      function gamefunc(){
+         let player1,player2;
+      let game = ['snake','water','gun']
+      let r = Math.floor(Math.random()*game.length);
+      player2 = game[r];
+      
+         console.log("YOUR POINTS = ") 
+         console.log(points);
+         
+      player1 = prompt("SNAKE WATER AND GUN ");
+      //console.log(player1)
+      if((player1 == 'snake') && player1 == 'water' ){
+         alert("you won");
+         points++;
+      }
+      if((player1 == 'snake') && player2 == 'gun'){
+         alert("you lose");
+         points--;
+      }
+      if((player1 == 'snake') && player2 == 'snake'){
+         alert("TIE");
+      }
+      
+      
+      if((player1 == 'water') && player2 == 'water'){
+         alert("TIE");
+      }
+      if((player1 == 'water') && player2 == 'gun' ){
+         alert("you won");
+         points++;
+      }
+      if((player1 == 'water') && player2 == 'snake'){
+         alert("you lose");
+         points--;
+      }
+      
+      
+      if((player1 == 'gun') && player2 == 'gun'){
+         alert("TIE");
+      }
+      if((player1 == 'gun') && player2 == 'snake'){
+         alert("you won");
+         points++;
+      }
+      if((player1 == 'gun') && player2 == 'water'){
+         alert("you lose");
+         points--;
+      }
+      let al = confirm("DO YOU WANT TO PLAY AGAIN");
+        if(al){
+        gamefunc();
+        }
+        
+      
+      }
+      
+      
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+.container{
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: grey;
+   color: wheat;
+}
+.box{
+   width: 80%;
+   height: 50%;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 12px;
+}
+.box .emoji{
+   font-size: 7.3rem;
+   transform: translateY(-80%)
+   
+}
+.box .joke{
+   
+   font-size: 20px;
+   margin-top: -50px
+}
+.nextbtn{
+   padding: 20px;
+   border: none;
+   outline: none;
+   font-size: 25px;
+   
+}

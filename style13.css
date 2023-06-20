@@ -1,0 +1,39 @@
+*{
+   padding: 0;
+   margin: 0;
+}
+:root{
+   --bcg--:#323A92;
+}
+body{
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.child{
+   width: 70px;
+   height: 70px;
+   background-color: var(--bcg--);
+   border-radius: 50%;
+}
+.container{
+   width: 200px;
+   height: 200px;
+   border: 4px solid #2633C7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top:4px solid #080C41;
+   border-radius:50%;
+   animation: rottcon 2s ease-in-out infinite;
+}
+@keyframes rottcon {
+   0% {
+      transform: rotateZ(0);
+   }
+   100% {
+    transform: rotateZ(360deg);
+   }
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Alkatra', cursive;
+   box-sizing: border-box;
+   transition: all 0.5s ease-in-out;
+}
+body{
+   height: 100vh;
+   width: 100vw;
+   display: grid;
+   place-items: center;
+   background-color: #5D6D7E;
+}
+.container .timer{
+   animation: move 1s linear infinite;
+   background-image: linear-gradient(90deg,#dd5e89 , #f7bb97);
+   border-radius: 13px;
+   font-size: 2.5em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid black;
+   width: 300px;
+   height: 150px;
+   box-shadow:
+    0 10px 30px 10px #fff, 
+     /* inner white */
+    0 0 45px 10px deeppink;
+}
+.timer div {
+   font-size: 50px;//!important;
+   padding-inline: 8px;
+   
+} 
+.timer div h6{
+   font-size: 20px;
+   color: white;
+}
+@keyframes move{
+   0%{
+      transform: translateX(-4px)
+   }
+   50%{
+      transform: translateX(4px)
+   }
+   100%{
+      transform: translateX(-4pxpx)
+   }
+}

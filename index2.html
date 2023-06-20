@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title></title>
+</head>
+<link rel="stylesheet" href="style2.css">
+<body
+<div class="content">
+   <button class="btn">CLICK</button>
+</div>
+<script>
+
+
+   let body = document.querySelector("body");
+   let colors = ["red","green","yellow","blue","pink","black","orange"]
+   let btn = document.querySelector(".btn");
+   body.style.backgroundColor = "pink";
+   //console.log("jai shree ram ❤️❤️")
+   
+    btn.addEventListener('click',changbg);
+   function changbg(){
+   
+   //console.log(body)
+   
+   let c = parseInt(Math.random()*colors.length)
+   //console.log(c)
+   c = c+1;
+   if(c !== 5){
+   btn.style = `background-color: ${colors[c]}
+   `;
+   }
+   body.style.backgroundColor = colors[c-1];
+}
+</script>
+</body>
+
+</html>
